@@ -3,6 +3,8 @@ package com.example.sportsbetting;
 import com.example.sportsbetting.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.Optional;
+
 /**
  * User Repository
  *
@@ -13,4 +15,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
+    Optional<User> getUserByUsername(String username);
 }
