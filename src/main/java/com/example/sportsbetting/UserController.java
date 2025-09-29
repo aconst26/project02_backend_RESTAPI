@@ -78,5 +78,4 @@ public class UserController {
                     .body(Map.of("message", "Invalid username or password"));
         }
     }
-
 }
