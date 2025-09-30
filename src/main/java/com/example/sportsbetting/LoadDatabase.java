@@ -12,11 +12,26 @@ public class LoadDatabase {
     private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
 
     @Bean
-    CommandLineRunner initDatabase(UserRepository repository){
+    CommandLineRunner initDatabase(UserRepository repository) {
         return args -> {
-            log.info("Preloading " + repository.save(new User("test", "test@gmail.com", "test")));
-            log.info("Preloading " + repository.save(new User("admin", "admin@gmail.com", "admin")));
+            preloadUser(repository, "test", "test@gmail.com", "test");
+            preloadUser(repository, "admin", "admin@gmail.com", "admin");
         };
     }
 
+    private void preloadUser(UserRepository repository, String username, String email, String password) {
+        boolean usernameExists = repository.getUserByUsername(username).isPresent();
+        boolean emailExists = repository.getUserByEmail(email).isPresent();
+
+        if (!usernameExists && !emailExists) {
+            User user = new User(username, email, password);
+            repository.save(user);
+            log.info("Preloaded user: " + username + " (" + email + ")");
+        } else {
+            log.info("Skipping preload. Existing user conflict: "
+                    + (usernameExists ? "username" : "")
+                    + (usernameExists && emailExists ? " & " : "")
+                    + (emailExists ? "email" : ""));
+        }
+    }
 }
