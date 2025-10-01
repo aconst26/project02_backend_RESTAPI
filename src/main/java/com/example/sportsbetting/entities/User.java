@@ -7,14 +7,17 @@ import jakarta.persistence.Id;
 
 import java.util.Objects;
 
+/**
+ * Entity class representing a User in the database.
+ */
 @Entity
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    private String userName;
-    private String userPassword;
-    private String email;
+    private Integer id; // Unique identifier for the user
+    private String userName; // Username of the user
+    private String userPassword; // Password of the user
+    private String email; // Email address of the user
 
     // No-argument constructor (required by JPA)
     public User() {
@@ -60,6 +63,7 @@ public class User {
         this.email = email;
     }
 
+    // Override equals() to compare users based on their fields
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -70,11 +74,13 @@ public class User {
                 Objects.equals(email, user.email);
     }
 
+    // Override hashCode() for consistent hashing
     @Override
     public int hashCode() {
         return Objects.hash(userName, userPassword, email);
     }
 
+    // Override toString() for a readable representation of the user
     @Override
     public String toString() {
         return "User{" +

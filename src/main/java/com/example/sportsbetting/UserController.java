@@ -14,16 +14,22 @@ import java.util.stream.Collectors;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
+/**
+ * REST Controller for managing User entities.
+ * Provides endpoints for CRUD operations and user login.
+ */
 @RestController
 @RequestMapping("/users")
-@CrossOrigin(origins = { "exp://192.168.0.31:8081" }) // adjust for your frontend
+@CrossOrigin(origins = { "exp://192.168.0.31:8081" }) // Adjust for your frontend
 public class UserController {
     private final UserRepository repository;
 
+    // Constructor injection for UserRepository
     public UserController(UserRepository repository) {
         this.repository = repository;
     }
 
+    // Fetch all users with HATEOAS links
     @GetMapping
     public CollectionModel<EntityModel<User>> all() {
         List<EntityModel<User>> users = repository.findAll().stream()
@@ -36,6 +42,7 @@ public class UserController {
                 linkTo(methodOn(UserController.class).all()).withSelfRel());
     }
 
+    // Fetch a single user by ID with HATEOAS links
     @GetMapping("/{id}")
     public EntityModel<User> one(@PathVariable Integer id) {
         User user = repository.findById(id)
@@ -46,11 +53,13 @@ public class UserController {
                 linkTo(methodOn(UserController.class).all()).withRel("users"));
     }
 
+    // Create a new user
     @PostMapping
     public User newUser(@RequestBody User newUser) {
         return repository.save(newUser);
     }
 
+    // Update an existing user or create a new one if not found
     @PutMapping("/{id}")
     public User replaceUser(@RequestBody User newUser, @PathVariable Integer id) {
         return repository.findById(id).map(user -> {
@@ -61,11 +70,13 @@ public class UserController {
         }).orElseGet(() -> repository.save(newUser));
     }
 
+    // Delete a user by ID
     @DeleteMapping("/{id}")
     public void deleteUser(@PathVariable Integer id) {
         repository.deleteById(id);
     }
 
+    // Authenticate a user by username and password
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody User loginRequest) {
         Optional<User> userOpt = repository.getUserByUserName(loginRequest.getUserName());
