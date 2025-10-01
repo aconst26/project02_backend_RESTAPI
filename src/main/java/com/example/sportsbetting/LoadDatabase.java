@@ -11,26 +11,26 @@ import org.springframework.context.annotation.Configuration;
 public class LoadDatabase {
     private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
 
-    @Bean
-    CommandLineRunner initDatabase(UserRepository repository) {
+    @Bean // Define a CommandLineRunner bean
+    public CommandLineRunner initDatabase(UserRepository repository) {
         return args -> {
             preloadUser(repository, "test", "test@gmail.com", "test");
             preloadUser(repository, "admin", "admin@gmail.com", "admin");
         };
     }
 
-    private void preloadUser(UserRepository repository, String username, String email, String password) {
-        boolean usernameExists = repository.getUserByUsername(username).isPresent();
+    private void preloadUser(UserRepository repository, String userName, String email, String userPassword) {
+        boolean userNameExists = repository.getUserByUserName(userName).isPresent();
         boolean emailExists = repository.getUserByEmail(email).isPresent();
 
-        if (!usernameExists && !emailExists) {
-            User user = new User(username, email, password);
+        if (!userNameExists && !emailExists) {
+            User user = new User(userName, userPassword, email);
             repository.save(user);
-            log.info("Preloaded user: " + username + " (" + email + ")");
+            log.info("Preloaded user: " + userName + " (" + email + ")");
         } else {
             log.info("Skipping preload. Existing user conflict: "
-                    + (usernameExists ? "username" : "")
-                    + (usernameExists && emailExists ? " & " : "")
+                    + (userNameExists ? "userName" : "")
+                    + (userNameExists && emailExists ? " & " : "")
                     + (emailExists ? "email" : ""));
         }
     }
