@@ -1,18 +1,27 @@
 package com.example.sportsbetting.app.entities;
 
 import com.example.sportsbetting.entities.User;
+import com.example.sportsbetting.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.mockito.Mockito;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 @DisplayName("User Entity Tests")
+@SpringBootTest
 class UserTest {
 
     private User user1;
     private User user2;
     private User user3;
+
+    @MockBean
+    private UserRepository userRepository;
 
     @BeforeEach
     void setUp() {
@@ -139,5 +148,26 @@ class UserTest {
         assertTrue(toString.contains("userName='null'"));
         assertTrue(toString.contains("email='null'"));
         assertTrue(toString.contains("userPassword='null'"));
+    }
+
+    @Test
+    @DisplayName("Should add and delete a user")
+    void testAddAndDeleteUser() {
+        User newUser = new User("newUser", "password123", "newuser@example.com");
+
+        // Simulate saving the user
+        when(userRepository.save(newUser)).thenReturn(newUser);
+        User savedUser = userRepository.save(newUser);
+
+        assertNotNull(savedUser);
+        assertEquals("newUser", savedUser.getUserName());
+        assertEquals("password123", savedUser.getUserPassword());
+        assertEquals("newuser@example.com", savedUser.getEmail());
+
+        // Simulate deleting the user
+        doNothing().when(userRepository).deleteById(savedUser.getId());
+        userRepository.deleteById(savedUser.getId());
+
+        verify(userRepository, times(1)).deleteById(savedUser.getId());
     }
 }
