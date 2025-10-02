@@ -61,11 +61,6 @@ public class StatController {
                 linkTo(methodOn(StatController.class).getAllStats()).withRel("stats"));
     }
 
-    // Create a new stat
-    @PostMapping
-    public Stat newStat(@RequestBody Stat newStat) {
-        return statRepository.save(newStat);
-    }
 
     // Update an existing stat or create a new one if not found
     @PutMapping("/{id}")
@@ -83,11 +78,5 @@ public class StatController {
             newStat.setStatId(id);
             return statRepository.save(newStat);
         });
-    }
-
-    // Delete a stat by ID
-    @DeleteMapping("/{id}")
-    public void deleteStat(@PathVariable Integer id) {
-        statRepository.deleteById(id);
     }
 }
