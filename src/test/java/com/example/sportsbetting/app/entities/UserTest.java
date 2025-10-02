@@ -5,22 +5,26 @@ import com.example.sportsbetting.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
-import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ActiveProfiles;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 @DisplayName("User Entity Tests")
 @SpringBootTest
+@ActiveProfiles("test")
+@ExtendWith(MockitoExtension.class)
 class UserTest {
 
     private User user1;
     private User user2;
     private User user3;
 
-    @MockBean
+    @Mock
     private UserRepository userRepository;
 
     @BeforeEach
@@ -29,6 +33,7 @@ class UserTest {
         user2 = new User("admin", "admin", "admin@gmail.com");
         user3 = new User("ac", "ac", "ac@gmail.com");
     }
+
 
     @Test
     @DisplayName("Default constructor should create empty user")
