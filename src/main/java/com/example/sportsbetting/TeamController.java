@@ -53,20 +53,4 @@ public class TeamController {
         return teamRepository.save(newTeam);
     }
 
-    // Update an existing team or create a new one if not found
-    @PutMapping("/{id}")
-    public Team replaceTeam(@RequestBody Team newTeam, @PathVariable Integer id) {
-        return teamRepository.findById(id).map(team -> {
-            team.setName(newTeam.getName());
-            team.setDivision(newTeam.getDivision());
-            team.setConference(newTeam.getConference());
-            return teamRepository.save(team);
-        }).orElseGet(() -> teamRepository.save(newTeam));
-    }
-
-    // Delete a team by ID
-    @DeleteMapping("/{id}")
-    public void deleteTeam(@PathVariable Integer id) {
-        teamRepository.deleteById(id);
-    }
 }
