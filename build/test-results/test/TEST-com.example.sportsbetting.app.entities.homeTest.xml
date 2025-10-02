@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Home Controller Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-02T22:50:17.466Z" hostname="codespaces-aad2a4" time="0.007">
+  <properties/>
+  <testcase name="Home route should return NBA season message" classname="com.example.sportsbetting.app.entities.homeTest" time="0.007"/>
+  <system-out><![CDATA[2025-10-02T22:50:17.456Z  INFO 35283 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.homeTest]: homeTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-02T22:50:17.459Z  INFO 35283 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.homeTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
