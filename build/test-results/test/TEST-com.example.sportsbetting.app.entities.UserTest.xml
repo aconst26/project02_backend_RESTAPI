@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="User Entity Tests" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-10-02T20:02:32.421Z" hostname="codespaces-aad2a4" time="0.133">
+<testsuite name="User Entity Tests" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-10-02T20:12:13.367Z" hostname="codespaces-aad2a4" time="0.135">
   <properties/>
-  <testcase name="Parameterized constructor should set username, email, and password" classname="com.example.sportsbetting.app.entities.UserTest" time="0.012"/>
-  <testcase name="toString() should contain all user information" classname="com.example.sportsbetting.app.entities.UserTest" time="0.008"/>
-  <testcase name="Setters and getters should work correctly" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
-  <testcase name="toString() should handle null values gracefully" classname="com.example.sportsbetting.app.entities.UserTest" time="0.008"/>
-  <testcase name="hashCode() should be consistent" classname="com.example.sportsbetting.app.entities.UserTest" time="0.006"/>
-  <testcase name="hashCode() should be equal for equal objects" classname="com.example.sportsbetting.app.entities.UserTest" time="0.007"/>
-  <testcase name="equals() should return true for users with same content" classname="com.example.sportsbetting.app.entities.UserTest" time="0.006"/>
-  <testcase name="equals() should return false for users with different content" classname="com.example.sportsbetting.app.entities.UserTest" time="0.008"/>
-  <testcase name="equals() should return false when compared to different type" classname="com.example.sportsbetting.app.entities.UserTest" time="0.007"/>
-  <testcase name="equals() should return true when object is compared to itself" classname="com.example.sportsbetting.app.entities.UserTest" time="0.008"/>
-  <testcase name="Should add and delete a user" classname="com.example.sportsbetting.app.entities.UserTest" time="0.01"/>
-  <testcase name="Default constructor should create empty user" classname="com.example.sportsbetting.app.entities.UserTest" time="0.012"/>
+  <testcase name="Parameterized constructor should set username, email, and password" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
+  <testcase name="toString() should contain all user information" classname="com.example.sportsbetting.app.entities.UserTest" time="0.007"/>
+  <testcase name="Setters and getters should work correctly" classname="com.example.sportsbetting.app.entities.UserTest" time="0.007"/>
+  <testcase name="toString() should handle null values gracefully" classname="com.example.sportsbetting.app.entities.UserTest" time="0.011"/>
+  <testcase name="hashCode() should be consistent" classname="com.example.sportsbetting.app.entities.UserTest" time="0.007"/>
+  <testcase name="hashCode() should be equal for equal objects" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
+  <testcase name="equals() should return true for users with same content" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
+  <testcase name="equals() should return false for users with different content" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
+  <testcase name="equals() should return false when compared to different type" classname="com.example.sportsbetting.app.entities.UserTest" time="0.006"/>
+  <testcase name="equals() should return true when object is compared to itself" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
+  <testcase name="Should add and delete a user" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
+  <testcase name="Default constructor should create empty user" classname="com.example.sportsbetting.app.entities.UserTest" time="0.005"/>
   <testcase name="equals() should return false when compared to null" classname="com.example.sportsbetting.app.entities.UserTest" time="0.006"/>
-  <system-out><![CDATA[2025-10-02T20:02:30.316Z  INFO 140073 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.UserTest]: UserTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-10-02T20:02:30.334Z  INFO 140073 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.UserTest
+  <system-out><![CDATA[2025-10-02T20:12:11.598Z  INFO 149403 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.UserTest]: UserTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-02T20:12:11.606Z  INFO 149403 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.UserTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -26,18 +26,18 @@
 
  :: Spring Boot ::       (v3.5.7-SNAPSHOT)
 
-2025-10-02T20:02:30.491Z  INFO 140073 --- [    Test worker] c.e.sportsbetting.app.entities.UserTest  : Starting UserTest using Java 17.0.16 with PID 140073 (started by codespace in /workspaces/project02_backend_RESTAPI)
-2025-10-02T20:02:30.493Z  INFO 140073 --- [    Test worker] c.e.sportsbetting.app.entities.UserTest  : No active profile set, falling back to 1 default profile: "default"
-2025-10-02T20:02:31.028Z  INFO 140073 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-02T20:02:31.056Z  INFO 140073 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
-2025-10-02T20:02:31.520Z  INFO 140073 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-02T20:02:31.527Z  INFO 140073 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-02T20:02:31.550Z  INFO 140073 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-02T20:02:31.551Z  INFO 140073 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2025-10-02T20:02:31.557Z  INFO 140073 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn2: url=jdbc:h2:mem:testdb user=SA
-2025-10-02T20:02:31.557Z  INFO 140073 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2025-10-02T20:02:31.558Z  WARN 140073 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-02T20:02:31.558Z  INFO 140073 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-10-02T20:12:11.723Z  INFO 149403 --- [    Test worker] c.e.sportsbetting.app.entities.UserTest  : Starting UserTest using Java 17.0.16 with PID 149403 (started by codespace in /workspaces/project02_backend_RESTAPI)
+2025-10-02T20:12:11.724Z  INFO 149403 --- [    Test worker] c.e.sportsbetting.app.entities.UserTest  : No active profile set, falling back to 1 default profile: "default"
+2025-10-02T20:12:12.180Z  INFO 149403 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-02T20:12:12.199Z  INFO 149403 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2025-10-02T20:12:12.604Z  INFO 149403 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-02T20:12:12.612Z  INFO 149403 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-02T20:12:12.641Z  INFO 149403 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-02T20:12:12.642Z  INFO 149403 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-10-02T20:12:12.648Z  INFO 149403 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn2: url=jdbc:h2:mem:testdb user=SA
+2025-10-02T20:12:12.651Z  INFO 149403 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-10-02T20:12:12.652Z  WARN 149403 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-02T20:12:12.653Z  INFO 149403 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -45,13 +45,13 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-02T20:02:31.651Z  INFO 140073 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-02T20:02:31.660Z  INFO 140073 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-02T20:02:31.978Z  WARN 140073 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-02T20:02:32.212Z  WARN 140073 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-10-02T20:02:32.374Z  INFO 140073 --- [    Test worker] c.e.sportsbetting.app.entities.UserTest  : Started UserTest in 2.03 seconds (process running for 12.252)
-2025-10-02T20:02:32.376Z  INFO 140073 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 2 users from database script
-2025-10-02T20:02:32.413Z  INFO 140073 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Loaded NBA teams, replacing any existing teams
+2025-10-02T20:12:12.714Z  INFO 149403 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-02T20:12:12.723Z  INFO 149403 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02T20:12:12.952Z  WARN 149403 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-02T20:12:13.150Z  WARN 149403 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-10-02T20:12:13.321Z  INFO 149403 --- [    Test worker] c.e.sportsbetting.app.entities.UserTest  : Started UserTest in 1.704 seconds (process running for 14.46)
+2025-10-02T20:12:13.323Z  INFO 149403 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 2 users from database script
+2025-10-02T20:12:13.360Z  INFO 149403 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Loaded NBA teams, replacing any existing teams
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
