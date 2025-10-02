@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.sportsbetting.app.ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-02T20:34:12.535Z" hostname="codespaces-aad2a4" time="0.954">
+<testsuite name="com.example.sportsbetting.app.ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-02T20:48:10.336Z" hostname="codespaces-aad2a4" time="0.809">
   <properties/>
-  <testcase name="contextLoads()" classname="com.example.sportsbetting.app.ApplicationTests" time="0.954"/>
-  <system-out><![CDATA[20:34:04.751 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.sportsbetting.app.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-20:34:05.044 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.ApplicationTests
+  <testcase name="contextLoads()" classname="com.example.sportsbetting.app.ApplicationTests" time="0.809"/>
+  <system-out><![CDATA[20:48:02.943 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.sportsbetting.app.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:48:03.179 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.ApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,19 +14,19 @@
 
  :: Spring Boot ::       (v3.5.7-SNAPSHOT)
 
-2025-10-02T20:34:06.063Z  INFO 165601 --- [    Test worker] c.e.sportsbetting.app.ApplicationTests   : Starting ApplicationTests using Java 17.0.16 with PID 165601 (started by codespace in /workspaces/project02_backend_RESTAPI)
-2025-10-02T20:34:06.066Z  INFO 165601 --- [    Test worker] c.e.sportsbetting.app.ApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2025-10-02T20:34:07.628Z  INFO 165601 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-02T20:34:07.699Z  INFO 165601 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
-2025-10-02T20:34:08.439Z  INFO 165601 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-02T20:34:08.492Z  INFO 165601 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-10-02T20:34:08.525Z  INFO 165601 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-02T20:34:08.850Z  INFO 165601 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-02T20:34:08.879Z  INFO 165601 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-10-02T20:34:09.114Z  INFO 165601 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2025-10-02T20:34:09.119Z  INFO 165601 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-10-02T20:34:09.147Z  WARN 165601 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-02T20:34:09.173Z  INFO 165601 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-10-02T20:48:03.877Z  INFO 175557 --- [    Test worker] c.e.sportsbetting.app.ApplicationTests   : Starting ApplicationTests using Java 17.0.16 with PID 175557 (started by codespace in /workspaces/project02_backend_RESTAPI)
+2025-10-02T20:48:03.879Z  INFO 175557 --- [    Test worker] c.e.sportsbetting.app.ApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-10-02T20:48:05.239Z  INFO 175557 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-02T20:48:05.312Z  INFO 175557 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2025-10-02T20:48:06.191Z  INFO 175557 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-02T20:48:06.262Z  INFO 175557 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-02T20:48:06.299Z  INFO 175557 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-02T20:48:06.676Z  INFO 175557 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-02T20:48:06.718Z  INFO 175557 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-02T20:48:06.945Z  INFO 175557 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-10-02T20:48:06.954Z  INFO 175557 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-02T20:48:06.992Z  WARN 175557 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-02T20:48:07.020Z  INFO 175557 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -34,14 +34,14 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-02T20:34:10.072Z  INFO 165601 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-02T20:34:10.123Z  INFO 165601 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-02T20:34:10.750Z  WARN 165601 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-02T20:34:11.194Z  WARN 165601 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-10-02T20:34:11.404Z  INFO 165601 --- [    Test worker] c.e.sportsbetting.app.ApplicationTests   : Started ApplicationTests in 5.823 seconds (process running for 8.016)
-2025-10-02T20:34:12.196Z  INFO 165601 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 2 users from database script
-2025-10-02T20:34:12.393Z  INFO 165601 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Loaded NBA teams, replacing any existing teams
-2025-10-02T20:34:12.481Z  INFO 165601 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 6 team stats from database script
+2025-10-02T20:48:08.213Z  INFO 175557 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-02T20:48:08.269Z  INFO 175557 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02T20:48:08.841Z  WARN 175557 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-02T20:48:09.352Z  WARN 175557 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-10-02T20:48:09.618Z  INFO 175557 --- [    Test worker] c.e.sportsbetting.app.ApplicationTests   : Started ApplicationTests in 6.234 seconds (process running for 8.044)
+2025-10-02T20:48:10.191Z  INFO 175557 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 2 users from database script
+2025-10-02T20:48:10.293Z  INFO 175557 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Loaded NBA teams, replacing any existing teams
+2025-10-02T20:48:10.321Z  INFO 175557 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 6 team stats from database script
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
