@@ -2,6 +2,7 @@ package com.example.sportsbetting;
 
 import com.example.sportsbetting.entities.User;
 import com.example.sportsbetting.entities.Team;
+import com.example.sportsbetting.entities.Fav;
 import com.example.sportsbetting.entities.Game;
 import com.example.sportsbetting.entities.Stat;
 import org.slf4j.Logger;
@@ -22,7 +23,7 @@ public class LoadDatabase {
 
     @Bean
     CommandLineRunner initDatabase(UserRepository userRepository, TeamRepository teamRepository,
-            StatRepository statRepository, GameRepository gameRepository) {
+            StatRepository statRepository, GameRepository gameRepository, FavRepository favRepository) {
         return args -> {
             // Preload users with exact IDs from your database
             preloadUsers(userRepository);
@@ -35,6 +36,9 @@ public class LoadDatabase {
 
             // Preload games with exact data from your database
             preloadGames(gameRepository);
+
+            // Preload favorites with exact data from your database
+            preloadFavs(favRepository);
         };
     }
 
@@ -109,6 +113,18 @@ public class LoadDatabase {
             log.info("Preloaded 5 games from database script");
         } else {
             log.info("Games already exist, skipping preload");
+        }
+    }
+
+    private void preloadFavs(FavRepository repository) {
+        // Check if favorites already exist to avoid duplicates
+        if (repository.count() == 0) {
+            // Favorites from your database script
+            repository.save(new Fav(1, 1, 10)); // test user likes Warriors
+
+            log.info("Preloaded 1 favorite from database script");
+        } else {
+            log.info("Favorites already exist, skipping preload");
         }
     }
 }

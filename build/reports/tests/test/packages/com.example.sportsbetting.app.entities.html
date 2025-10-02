@@ -28,7 +28,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">13</div>
 <p>failures</p>
 </div>
 </td>
@@ -40,7 +40,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.758s</div>
+<div class="counter">0.632s</div>
 <p>duration</p>
 </div>
 </td>
@@ -49,8 +49,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">76%</div>
 <p>successful</p>
 </div>
 </td>
@@ -60,9 +60,69 @@
 <div class="tab-container">
 <ul class="tabLinks">
 <li>
+<a href="#">Failed tests</a>
+</li>
+<li>
 <a href="#">Classes</a>
 </li>
 </ul>
+<div class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testAddAndDeleteUser()">Should add and delete a user</a>
+</li>
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testDefaultConstructor()">Default constructor should create empty user</a>
+</li>
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testEqualsWithDifferentContent()">equals() should return false for users with different content</a>
+</li>
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testEqualsWithDifferentType()">equals() should return false when compared to different type</a>
+</li>
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testEqualsWithNull()">equals() should return false when compared to null</a>
+</li>
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testEqualsWithSameContent()">equals() should return true for users with same content</a>
+</li>
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testEqualsWithSameObject()">equals() should return true when object is compared to itself</a>
+</li>
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testHashCodeConsistency()">hashCode() should be consistent</a>
+</li>
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testHashCodeEqualityForEqualObjects()">hashCode() should be equal for equal objects</a>
+</li>
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testParameterizedConstructor()">Parameterized constructor should set username, email, and password</a>
+</li>
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testSettersAndGetters()">Setters and getters should work correctly</a>
+</li>
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testToString()">toString() should contain all user information</a>
+</li>
+<li>
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>.
+<a href="../classes/com.example.sportsbetting.app.entities.UserTest.html#testToStringWithNullValues()">toString() should handle null values gracefully</a>
+</li>
+</ul>
+</div>
 <div class="tab">
 <h2>Classes</h2>
 <table>
@@ -83,7 +143,7 @@
 <td>14</td>
 <td>0</td>
 <td>0</td>
-<td>0.384s</td>
+<td>0.338s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -93,7 +153,7 @@
 <td>14</td>
 <td>0</td>
 <td>0</td>
-<td>0.178s</td>
+<td>0.171s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -103,18 +163,18 @@
 <td>14</td>
 <td>0</td>
 <td>0</td>
-<td>0.113s</td>
+<td>0.090s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="../classes/com.example.sportsbetting.app.entities.UserTest.html">User Entity Tests</a>
 </td>
 <td>13</td>
+<td>13</td>
 <td>0</td>
-<td>0</td>
-<td>0.083s</td>
-<td class="success">100%</td>
+<td>0.033s</td>
+<td class="failures">0%</td>
 </tr>
 </table>
 </div>
@@ -126,7 +186,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14.3</a> at Oct 2, 2025, 9:00:40 PM</p>
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at Oct 2, 2025, 10:13:23 PM</p>
 </div>
 </div>
 </body>
