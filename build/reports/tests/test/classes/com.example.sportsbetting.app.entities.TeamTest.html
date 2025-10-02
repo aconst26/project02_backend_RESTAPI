@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.363s</div>
+<div class="counter">0.319s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,85 +81,85 @@
 <tr>
 <td class="success">Should add and delete a team</td>
 <td class="success">testAddAndDeleteTeam()</td>
-<td class="success">0.089s</td>
+<td class="success">0.058s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Default constructor should create empty team</td>
 <td class="success">testDefaultConstructor()</td>
-<td class="success">0.010s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">equals() should return false for teams with different content</td>
 <td class="success">testEqualsWithDifferentContent()</td>
-<td class="success">0.009s</td>
+<td class="success">0.012s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">equals() should return false when compared to different type</td>
 <td class="success">testEqualsWithDifferentType()</td>
-<td class="success">0.010s</td>
+<td class="success">0.014s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">equals() should return false when compared to null</td>
 <td class="success">testEqualsWithNull()</td>
-<td class="success">0.010s</td>
+<td class="success">0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">equals() should return true for teams with same content</td>
 <td class="success">testEqualsWithSameContent()</td>
-<td class="success">0.011s</td>
+<td class="success">0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">equals() should return true when object is compared to itself</td>
 <td class="success">testEqualsWithSameObject()</td>
-<td class="success">0.014s</td>
+<td class="success">0.008s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">hashCode() should be consistent</td>
 <td class="success">testHashCodeConsistency()</td>
-<td class="success">0.014s</td>
+<td class="success">0.019s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">hashCode() should be equal for equal objects</td>
 <td class="success">testHashCodeEqualityForEqualObjects()</td>
-<td class="success">0.007s</td>
+<td class="success">0.016s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Parameterized constructor should set name, division, and conference</td>
 <td class="success">testParameterizedConstructor()</td>
-<td class="success">0.109s</td>
+<td class="success">0.082s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Constructor with ID should set all fields</td>
 <td class="success">testParameterizedConstructorWithId()</td>
-<td class="success">0.011s</td>
+<td class="success">0.013s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Setters and getters should work correctly</td>
 <td class="success">testSettersAndGetters()</td>
-<td class="success">0.011s</td>
+<td class="success">0.018s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">toString() should contain all team information</td>
 <td class="success">testToString()</td>
-<td class="success">0.049s</td>
+<td class="success">0.034s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">toString() should handle null values gracefully</td>
 <td class="success">testToStringWithNullValues()</td>
-<td class="success">0.009s</td>
+<td class="success">0.018s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -167,8 +167,8 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2025-10-02T20:12:09.704Z  INFO 149403 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.TeamTest]: TeamTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-10-02T20:12:09.726Z  INFO 149403 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.TeamTest
+<pre>2025-10-02T20:34:13.512Z  INFO 165601 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.TeamTest]: TeamTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-02T20:34:13.532Z  INFO 165601 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.TeamTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -179,18 +179,18 @@
 
  :: Spring Boot ::       (v3.5.7-SNAPSHOT)
 
-2025-10-02T20:12:09.766Z  INFO 149403 --- [    Test worker] c.e.sportsbetting.app.entities.TeamTest  : Starting TeamTest using Java 17.0.16 with PID 149403 (started by codespace in /workspaces/project02_backend_RESTAPI)
-2025-10-02T20:12:09.767Z  INFO 149403 --- [    Test worker] c.e.sportsbetting.app.entities.TeamTest  : The following 1 profile is active: &quot;test&quot;
-2025-10-02T20:12:09.978Z  INFO 149403 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-02T20:12:09.989Z  INFO 149403 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
-2025-10-02T20:12:10.164Z  INFO 149403 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-02T20:12:10.176Z  INFO 149403 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-02T20:12:10.212Z  INFO 149403 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-02T20:12:10.215Z  INFO 149403 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-10-02T20:12:10.217Z  INFO 149403 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn1: url=jdbc:h2:mem:testdb user=SA
-2025-10-02T20:12:10.218Z  INFO 149403 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-10-02T20:12:10.218Z  WARN 149403 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-02T20:12:10.219Z  INFO 149403 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-10-02T20:34:13.583Z  INFO 165601 --- [    Test worker] c.e.sportsbetting.app.entities.TeamTest  : Starting TeamTest using Java 17.0.16 with PID 165601 (started by codespace in /workspaces/project02_backend_RESTAPI)
+2025-10-02T20:34:13.584Z  INFO 165601 --- [    Test worker] c.e.sportsbetting.app.entities.TeamTest  : The following 1 profile is active: &quot;test&quot;
+2025-10-02T20:34:13.844Z  INFO 165601 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-02T20:34:13.857Z  INFO 165601 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2025-10-02T20:34:14.027Z  INFO 165601 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-02T20:34:14.034Z  INFO 165601 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-02T20:34:14.049Z  INFO 165601 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-02T20:34:14.051Z  INFO 165601 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-02T20:34:14.053Z  INFO 165601 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn1: url=jdbc:h2:mem:testdb user=SA
+2025-10-02T20:34:14.055Z  INFO 165601 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-02T20:34:14.056Z  WARN 165601 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-02T20:34:14.057Z  INFO 165601 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -198,13 +198,14 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-02T20:12:10.268Z  INFO 149403 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-02T20:12:10.277Z  INFO 149403 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-02T20:12:10.375Z  WARN 149403 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-02T20:12:10.492Z  WARN 149403 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-10-02T20:12:10.580Z  INFO 149403 --- [    Test worker] c.e.sportsbetting.app.entities.TeamTest  : Started TeamTest in 0.848 seconds (process running for 11.719)
-2025-10-02T20:12:10.594Z  INFO 149403 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 2 users from database script
-2025-10-02T20:12:10.622Z  INFO 149403 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Loaded NBA teams, replacing any existing teams
+2025-10-02T20:34:14.102Z  INFO 165601 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-02T20:34:14.115Z  INFO 165601 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02T20:34:14.321Z  WARN 165601 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-02T20:34:14.446Z  WARN 165601 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-10-02T20:34:14.536Z  INFO 165601 --- [    Test worker] c.e.sportsbetting.app.entities.TeamTest  : Started TeamTest in 0.999 seconds (process running for 11.148)
+2025-10-02T20:34:14.551Z  INFO 165601 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 2 users from database script
+2025-10-02T20:34:14.572Z  INFO 165601 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Loaded NBA teams, replacing any existing teams
+2025-10-02T20:34:14.588Z  INFO 165601 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 6 team stats from database script
 </pre>
 </span>
 </div>
@@ -216,7 +217,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14.3</a> at Oct 2, 2025, 8:12:13 PM</p>
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at Oct 2, 2025, 8:34:17 PM</p>
 </div>
 </div>
 </body>
