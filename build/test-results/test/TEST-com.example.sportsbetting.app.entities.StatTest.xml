@@ -1,59 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Stat Entity Tests" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-10-02T20:48:12.648Z" hostname="codespaces-aad2a4" time="0.397">
+<testsuite name="Stat Entity Tests" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-10-02T21:00:37.756Z" hostname="codespaces-aad2a4" time="0.218">
   <properties/>
-  <testcase name="Parameterized constructor should set all fields except statId" classname="com.example.sportsbetting.app.entities.StatTest" time="0.08"/>
-  <testcase name="toString() should contain all stat information" classname="com.example.sportsbetting.app.entities.StatTest" time="0.055"/>
-  <testcase name="Setters and getters should work correctly" classname="com.example.sportsbetting.app.entities.StatTest" time="0.021"/>
-  <testcase name="toString() should handle null values gracefully" classname="com.example.sportsbetting.app.entities.StatTest" time="0.016"/>
-  <testcase name="hashCode() should be consistent" classname="com.example.sportsbetting.app.entities.StatTest" time="0.02"/>
-  <testcase name="hashCode() should be equal for equal objects" classname="com.example.sportsbetting.app.entities.StatTest" time="0.011"/>
+  <testcase name="Parameterized constructor should set all fields except statId" classname="com.example.sportsbetting.app.entities.StatTest" time="0.016"/>
+  <testcase name="toString() should contain all stat information" classname="com.example.sportsbetting.app.entities.StatTest" time="0.029"/>
+  <testcase name="Setters and getters should work correctly" classname="com.example.sportsbetting.app.entities.StatTest" time="0.023"/>
+  <testcase name="toString() should handle null values gracefully" classname="com.example.sportsbetting.app.entities.StatTest" time="0.018"/>
+  <testcase name="hashCode() should be consistent" classname="com.example.sportsbetting.app.entities.StatTest" time="0.018"/>
+  <testcase name="hashCode() should be equal for equal objects" classname="com.example.sportsbetting.app.entities.StatTest" time="0.007"/>
   <testcase name="Constructor with ID should set all fields" classname="com.example.sportsbetting.app.entities.StatTest" time="0.009"/>
-  <testcase name="equals() should return true for stats with same content" classname="com.example.sportsbetting.app.entities.StatTest" time="0.006"/>
-  <testcase name="equals() should return false for stats with different content" classname="com.example.sportsbetting.app.entities.StatTest" time="0.008"/>
-  <testcase name="equals() should return false when compared to different type" classname="com.example.sportsbetting.app.entities.StatTest" time="0.012"/>
-  <testcase name="equals() should return true when object is compared to itself" classname="com.example.sportsbetting.app.entities.StatTest" time="0.013"/>
-  <testcase name="Should add and delete a stat" classname="com.example.sportsbetting.app.entities.StatTest" time="0.068"/>
-  <testcase name="Default constructor should create empty stat" classname="com.example.sportsbetting.app.entities.StatTest" time="0.008"/>
-  <testcase name="equals() should return false when compared to null" classname="com.example.sportsbetting.app.entities.StatTest" time="0.013"/>
-  <system-out><![CDATA[2025-10-02T20:48:11.161Z  INFO 175557 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.StatTest]: StatTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-10-02T20:48:11.184Z  INFO 175557 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.StatTest
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
-
- :: Spring Boot ::       (v3.5.7-SNAPSHOT)
-
-2025-10-02T20:48:11.231Z  INFO 175557 --- [    Test worker] c.e.sportsbetting.app.entities.StatTest  : Starting StatTest using Java 17.0.16 with PID 175557 (started by codespace in /workspaces/project02_backend_RESTAPI)
-2025-10-02T20:48:11.231Z  INFO 175557 --- [    Test worker] c.e.sportsbetting.app.entities.StatTest  : The following 1 profile is active: "test"
-2025-10-02T20:48:11.542Z  INFO 175557 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-02T20:48:11.558Z  INFO 175557 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
-2025-10-02T20:48:11.667Z  INFO 175557 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-02T20:48:11.670Z  INFO 175557 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-02T20:48:11.695Z  INFO 175557 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-02T20:48:11.696Z  INFO 175557 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-10-02T20:48:11.697Z  INFO 175557 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn1: url=jdbc:h2:mem:testdb user=SA
-2025-10-02T20:48:11.697Z  INFO 175557 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-10-02T20:48:11.698Z  WARN 175557 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-02T20:48:11.698Z  INFO 175557 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-10-02T20:48:11.741Z  INFO 175557 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-02T20:48:11.756Z  INFO 175557 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-02T20:48:11.885Z  WARN 175557 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-02T20:48:11.993Z  WARN 175557 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-10-02T20:48:12.108Z  INFO 175557 --- [    Test worker] c.e.sportsbetting.app.entities.StatTest  : Started StatTest in 0.919 seconds (process running for 10.534)
-2025-10-02T20:48:12.131Z  INFO 175557 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 2 users from database script
-2025-10-02T20:48:12.167Z  INFO 175557 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Loaded NBA teams, replacing any existing teams
-2025-10-02T20:48:12.186Z  INFO 175557 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 6 team stats from database script
+  <testcase name="equals() should return true for stats with same content" classname="com.example.sportsbetting.app.entities.StatTest" time="0.007"/>
+  <testcase name="equals() should return false for stats with different content" classname="com.example.sportsbetting.app.entities.StatTest" time="0.011"/>
+  <testcase name="equals() should return false when compared to different type" classname="com.example.sportsbetting.app.entities.StatTest" time="0.01"/>
+  <testcase name="equals() should return true when object is compared to itself" classname="com.example.sportsbetting.app.entities.StatTest" time="0.008"/>
+  <testcase name="Should add and delete a stat" classname="com.example.sportsbetting.app.entities.StatTest" time="0.012"/>
+  <testcase name="Default constructor should create empty stat" classname="com.example.sportsbetting.app.entities.StatTest" time="0.005"/>
+  <testcase name="equals() should return false when compared to null" classname="com.example.sportsbetting.app.entities.StatTest" time="0.005"/>
+  <system-out><![CDATA[2025-10-02T21:00:37.597Z  INFO 184843 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.StatTest]: StatTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-02T21:00:37.608Z  INFO 184843 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.StatTest
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
