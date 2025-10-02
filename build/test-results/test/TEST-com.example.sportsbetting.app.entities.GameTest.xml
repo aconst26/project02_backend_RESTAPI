@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Game Entity Tests" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-10-02T22:30:07.554Z" hostname="codespaces-aad2a4" time="0.52">
+<testsuite name="Game Entity Tests" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-10-02T22:41:27.634Z" hostname="codespaces-aad2a4" time="0.434">
   <properties/>
-  <testcase name="Parameterized constructor should set date, hometeamID, and awayteamID" classname="com.example.sportsbetting.app.entities.GameTest" time="0.13"/>
-  <testcase name="toString() should contain all game information" classname="com.example.sportsbetting.app.entities.GameTest" time="0.038"/>
-  <testcase name="Setters and getters should work correctly" classname="com.example.sportsbetting.app.entities.GameTest" time="0.026"/>
-  <testcase name="toString() should handle null values gracefully" classname="com.example.sportsbetting.app.entities.GameTest" time="0.022"/>
-  <testcase name="hashCode() should be consistent" classname="com.example.sportsbetting.app.entities.GameTest" time="0.018"/>
-  <testcase name="hashCode() should be equal for equal objects" classname="com.example.sportsbetting.app.entities.GameTest" time="0.03"/>
-  <testcase name="Constructor with ID should set all fields" classname="com.example.sportsbetting.app.entities.GameTest" time="0.017"/>
-  <testcase name="equals() should return true for games with same content" classname="com.example.sportsbetting.app.entities.GameTest" time="0.009"/>
-  <testcase name="equals() should return false for games with different content" classname="com.example.sportsbetting.app.entities.GameTest" time="0.009"/>
-  <testcase name="equals() should return false when compared to different type" classname="com.example.sportsbetting.app.entities.GameTest" time="0.009"/>
-  <testcase name="equals() should return true when object is compared to itself" classname="com.example.sportsbetting.app.entities.GameTest" time="0.025"/>
-  <testcase name="Should add and delete a game" classname="com.example.sportsbetting.app.entities.GameTest" time="0.061"/>
+  <testcase name="Parameterized constructor should set date, hometeamID, and awayteamID" classname="com.example.sportsbetting.app.entities.GameTest" time="0.094"/>
+  <testcase name="toString() should contain all game information" classname="com.example.sportsbetting.app.entities.GameTest" time="0.045"/>
+  <testcase name="Setters and getters should work correctly" classname="com.example.sportsbetting.app.entities.GameTest" time="0.015"/>
+  <testcase name="toString() should handle null values gracefully" classname="com.example.sportsbetting.app.entities.GameTest" time="0.014"/>
+  <testcase name="hashCode() should be consistent" classname="com.example.sportsbetting.app.entities.GameTest" time="0.007"/>
+  <testcase name="hashCode() should be equal for equal objects" classname="com.example.sportsbetting.app.entities.GameTest" time="0.014"/>
+  <testcase name="Constructor with ID should set all fields" classname="com.example.sportsbetting.app.entities.GameTest" time="0.01"/>
+  <testcase name="equals() should return true for games with same content" classname="com.example.sportsbetting.app.entities.GameTest" time="0.011"/>
+  <testcase name="equals() should return false for games with different content" classname="com.example.sportsbetting.app.entities.GameTest" time="0.012"/>
+  <testcase name="equals() should return false when compared to different type" classname="com.example.sportsbetting.app.entities.GameTest" time="0.012"/>
+  <testcase name="equals() should return true when object is compared to itself" classname="com.example.sportsbetting.app.entities.GameTest" time="0.031"/>
+  <testcase name="Should add and delete a game" classname="com.example.sportsbetting.app.entities.GameTest" time="0.066"/>
   <testcase name="Default constructor should create empty game" classname="com.example.sportsbetting.app.entities.GameTest" time="0.016"/>
-  <testcase name="equals() should return false when compared to null" classname="com.example.sportsbetting.app.entities.GameTest" time="0.024"/>
-  <system-out><![CDATA[2025-10-02T22:30:05.436Z  INFO 21706 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.GameTest]: GameTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-10-02T22:30:05.462Z  INFO 21706 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.GameTest
+  <testcase name="equals() should return false when compared to null" classname="com.example.sportsbetting.app.entities.GameTest" time="0.015"/>
+  <system-out><![CDATA[2025-10-02T22:41:25.511Z  INFO 30096 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.GameTest]: GameTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-02T22:41:25.565Z  INFO 30096 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.GameTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -27,18 +27,18 @@
 
  :: Spring Boot ::       (v3.5.7-SNAPSHOT)
 
-2025-10-02T22:30:05.520Z  INFO 21706 --- [    Test worker] c.e.sportsbetting.app.entities.GameTest  : Starting GameTest using Java 17.0.16 with PID 21706 (started by codespace in /workspaces/project02_backend_RESTAPI)
-2025-10-02T22:30:05.521Z  INFO 21706 --- [    Test worker] c.e.sportsbetting.app.entities.GameTest  : The following 1 profile is active: "test"
-2025-10-02T22:30:05.751Z  INFO 21706 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-02T22:30:05.770Z  INFO 21706 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
-2025-10-02T22:30:05.938Z  INFO 21706 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-02T22:30:05.941Z  INFO 21706 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-02T22:30:05.955Z  INFO 21706 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-02T22:30:05.957Z  INFO 21706 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-10-02T22:30:05.960Z  INFO 21706 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn1: url=jdbc:h2:mem:testdb user=SA
-2025-10-02T22:30:05.960Z  INFO 21706 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-10-02T22:30:05.961Z  WARN 21706 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-02T22:30:05.962Z  INFO 21706 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-10-02T22:41:25.609Z  INFO 30096 --- [    Test worker] c.e.sportsbetting.app.entities.GameTest  : Starting GameTest using Java 17.0.16 with PID 30096 (started by codespace in /workspaces/project02_backend_RESTAPI)
+2025-10-02T22:41:25.610Z  INFO 30096 --- [    Test worker] c.e.sportsbetting.app.entities.GameTest  : The following 1 profile is active: "test"
+2025-10-02T22:41:25.899Z  INFO 30096 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-02T22:41:25.910Z  INFO 30096 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 5 JPA repository interfaces.
+2025-10-02T22:41:26.117Z  INFO 30096 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-02T22:41:26.124Z  INFO 30096 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-02T22:41:26.151Z  INFO 30096 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-02T22:41:26.153Z  INFO 30096 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-02T22:41:26.156Z  INFO 30096 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn1: url=jdbc:h2:mem:testdb user=SA
+2025-10-02T22:41:26.158Z  INFO 30096 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-02T22:41:26.163Z  WARN 30096 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-02T22:41:26.164Z  INFO 30096 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -46,16 +46,16 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-02T22:30:06.057Z  INFO 21706 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-02T22:30:06.087Z  INFO 21706 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-02T22:30:06.344Z  WARN 21706 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-02T22:30:06.555Z  WARN 21706 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-10-02T22:30:06.713Z  INFO 21706 --- [    Test worker] c.e.sportsbetting.app.entities.GameTest  : Started GameTest in 1.24 seconds (process running for 11.658)
-2025-10-02T22:30:06.740Z  INFO 21706 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 2 users from database script
-2025-10-02T22:30:06.783Z  INFO 21706 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Loaded NBA teams, replacing any existing teams
-2025-10-02T22:30:06.825Z  INFO 21706 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 6 team stats from database script
-2025-10-02T22:30:06.859Z  INFO 21706 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 5 games from database script
-2025-10-02T22:30:06.866Z  INFO 21706 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 1 favorite from database script
+2025-10-02T22:41:26.258Z  INFO 30096 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-02T22:41:26.288Z  INFO 30096 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02T22:41:26.466Z  WARN 30096 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-02T22:41:26.643Z  WARN 30096 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-10-02T22:41:26.785Z  INFO 30096 --- [    Test worker] c.e.sportsbetting.app.entities.GameTest  : Started GameTest in 1.213 seconds (process running for 10.727)
+2025-10-02T22:41:26.808Z  INFO 30096 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 2 users from database script
+2025-10-02T22:41:26.825Z  INFO 30096 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Loaded NBA teams, replacing any existing teams
+2025-10-02T22:41:26.852Z  INFO 30096 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 6 team stats from database script
+2025-10-02T22:41:26.871Z  INFO 30096 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 5 games from database script
+2025-10-02T22:41:26.884Z  INFO 30096 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 1 favorite from database script
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
