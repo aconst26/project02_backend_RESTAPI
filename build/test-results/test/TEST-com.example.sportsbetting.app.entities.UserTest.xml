@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="User Entity Tests" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-10-02T22:50:17.295Z" hostname="codespaces-aad2a4" time="0.155">
+<testsuite name="User Entity Tests" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-10-06T22:32:04.104Z" hostname="codespaces-fe7fcc" time="0.182">
   <properties/>
-  <testcase name="Parameterized constructor should set username, email, and password" classname="com.example.sportsbetting.app.entities.UserTest" time="0.008"/>
-  <testcase name="toString() should contain all user information" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
-  <testcase name="Setters and getters should work correctly" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
-  <testcase name="toString() should handle null values gracefully" classname="com.example.sportsbetting.app.entities.UserTest" time="0.006"/>
-  <testcase name="hashCode() should be consistent" classname="com.example.sportsbetting.app.entities.UserTest" time="0.01"/>
-  <testcase name="hashCode() should be equal for equal objects" classname="com.example.sportsbetting.app.entities.UserTest" time="0.008"/>
+  <testcase name="Parameterized constructor should set username, email, and password" classname="com.example.sportsbetting.app.entities.UserTest" time="0.017"/>
+  <testcase name="toString() should contain all user information" classname="com.example.sportsbetting.app.entities.UserTest" time="0.015"/>
+  <testcase name="Setters and getters should work correctly" classname="com.example.sportsbetting.app.entities.UserTest" time="0.012"/>
+  <testcase name="toString() should handle null values gracefully" classname="com.example.sportsbetting.app.entities.UserTest" time="0.014"/>
+  <testcase name="hashCode() should be consistent" classname="com.example.sportsbetting.app.entities.UserTest" time="0.013"/>
+  <testcase name="hashCode() should be equal for equal objects" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
   <testcase name="equals() should return true for users with same content" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
-  <testcase name="equals() should return false for users with different content" classname="com.example.sportsbetting.app.entities.UserTest" time="0.011"/>
-  <testcase name="equals() should return false when compared to different type" classname="com.example.sportsbetting.app.entities.UserTest" time="0.015"/>
-  <testcase name="equals() should return true when object is compared to itself" classname="com.example.sportsbetting.app.entities.UserTest" time="0.012"/>
-  <testcase name="Should add and delete a user" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
+  <testcase name="equals() should return false for users with different content" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
+  <testcase name="equals() should return false when compared to different type" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
+  <testcase name="equals() should return true when object is compared to itself" classname="com.example.sportsbetting.app.entities.UserTest" time="0.009"/>
+  <testcase name="Should add and delete a user" classname="com.example.sportsbetting.app.entities.UserTest" time="0.011"/>
   <testcase name="Default constructor should create empty user" classname="com.example.sportsbetting.app.entities.UserTest" time="0.007"/>
-  <testcase name="equals() should return false when compared to null" classname="com.example.sportsbetting.app.entities.UserTest" time="0.005"/>
-  <system-out><![CDATA[2025-10-02T22:50:17.156Z  INFO 35283 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.UserTest]: UserTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-10-02T22:50:17.163Z  INFO 35283 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.UserTest
+  <testcase name="equals() should return false when compared to null" classname="com.example.sportsbetting.app.entities.UserTest" time="0.008"/>
+  <system-out><![CDATA[2025-10-06T22:32:03.912Z  INFO 54587 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.UserTest]: UserTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-06T22:32:03.927Z  INFO 54587 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.UserTest
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

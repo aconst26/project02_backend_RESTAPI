@@ -14,15 +14,21 @@ public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer gameID;
-    
+
     @Column(name = "date", nullable = false)
     private LocalDate date;
-    
+
     @Column(name = "hometeamID")
     private Integer hometeamID;
-    
+
+    @Column(name = "hometeamName")
+    private String hometeamName;
+
     @Column(name = "awayteamID")
     private Integer awayteamID;
+
+    @Column(name = "awayteamName")
+    private String awayteamName;
     
     // Many-to-one relationship with Team for home team
     @ManyToOne(fetch = FetchType.LAZY)
@@ -40,18 +46,22 @@ public class Game {
     public Game() {
     }
 
-    public Game(LocalDate date, Integer hometeamID, Integer awayteamID) {
+    public Game(LocalDate date, Integer hometeamID, String hometeamName, Integer awayteamID, String awayteamName) {
         this.date = date;
         this.hometeamID = hometeamID;
+        this.hometeamName = hometeamName;
         this.awayteamID = awayteamID;
+        this.awayteamName = awayteamName;
     }
 
     // Constructor with ID for preloading
-    public Game(Integer gameID, LocalDate date, Integer hometeamID, Integer awayteamID) {
+    public Game(Integer gameID, LocalDate date, Integer hometeamID, String hometeamName, Integer awayteamID, String awayteamName) {
         this.gameID = gameID;
         this.date = date;
         this.hometeamID = hometeamID;
+        this.hometeamName = hometeamName;
         this.awayteamID = awayteamID;
+        this.awayteamName = awayteamName;
     }
 
     // Getters and setters
@@ -79,12 +89,28 @@ public class Game {
         this.hometeamID = hometeamID;
     }
 
+    public String getHometeamName() {
+        return hometeamName;
+    }
+
+    public void setHometeamName(String hometeamName) {
+        this.hometeamName = hometeamName;
+    }
+
     public Integer getAwayteamID() {
         return awayteamID;
     }
 
     public void setAwayteamID(Integer awayteamID) {
         this.awayteamID = awayteamID;
+    }
+
+    public String getAwayteamName() {
+        return awayteamName;
+    }
+
+    public void setAwayteamName(String awayteamName) {
+        this.awayteamName = awayteamName;
     }
 
     public Team getHomeTeam() {
@@ -111,12 +137,14 @@ public class Game {
         return Objects.equals(gameID, game.gameID) &&
                 Objects.equals(date, game.date) &&
                 Objects.equals(hometeamID, game.hometeamID) &&
-                Objects.equals(awayteamID, game.awayteamID);
+                Objects.equals(hometeamName, game.hometeamName) &&
+                Objects.equals(awayteamID, game.awayteamID) &&
+                Objects.equals(awayteamName, game.awayteamName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(gameID, date, hometeamID, awayteamID);
+        return Objects.hash(gameID, date, hometeamID, awayteamID, hometeamName, awayteamName);
     }
 
     @Override
@@ -125,7 +153,9 @@ public class Game {
                 "gameID=" + gameID +
                 ", date=" + date +
                 ", hometeamID=" + hometeamID +
+                ", hometeamName='" + hometeamName + '\'' +
                 ", awayteamID=" + awayteamID +
+                ", awayteamName='" + awayteamName + '\'' +
                 '}';
     }
 }

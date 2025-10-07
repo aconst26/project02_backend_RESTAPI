@@ -12,39 +12,44 @@ import java.util.Objects;
 public class Fav {
     @Id
     private Integer fav;
-    
+
     @Column(name = "userID")
     private Integer userID;
-    
+
     @Column(name = "teamID")
     private Integer teamID;
-    
-    // Many-to-one relationship with User
+
+    @Column(name = "teamName")
+    private String teamName;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userID", insertable = false, updatable = false)
     @JsonIgnore
     private User user;
-    
-    // Many-to-one relationship with Team
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "teamID", insertable = false, updatable = false)
     @JsonIgnore
     private Team team;
 
+    // Constructors, getters, setters, equals, hashCode, and toString methods
+
     // Constructors
     public Fav() {
     }
 
-    public Fav(Integer userID, Integer teamID) {
+    public Fav(Integer userID, Integer teamID, String teamName) {
         this.userID = userID;
         this.teamID = teamID;
+        this.teamName = teamName;
     }
 
     // Constructor with ID for preloading
-    public Fav(Integer fav, Integer userID, Integer teamID) {
+    public Fav(Integer fav, Integer userID, Integer teamID, String teamName) {
         this.fav = fav;
         this.userID = userID;
         this.teamID = teamID;
+        this.teamName = teamName;
     }
 
     // Getters and setters
@@ -72,6 +77,14 @@ public class Fav {
         this.teamID = teamID;
     }
 
+    public String getTeamName() {
+        return teamName;
+    }
+
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
+    }
+
     public User getUser() {
         return user;
     }
@@ -90,11 +103,14 @@ public class Fav {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Fav fav1 = (Fav) o;
         return Objects.equals(fav, fav1.fav) &&
                 Objects.equals(userID, fav1.userID) &&
+                Objects.equals(teamName, fav1.teamName) &&
                 Objects.equals(teamID, fav1.teamID);
     }
 
@@ -109,6 +125,7 @@ public class Fav {
                 "fav=" + fav +
                 ", userID=" + userID +
                 ", teamID=" + teamID +
+                ", teamName='" + teamName + '\'' +
                 '}';
     }
 }

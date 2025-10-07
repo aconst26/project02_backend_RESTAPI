@@ -13,29 +13,30 @@ import java.util.Objects;
 public class Stat {
     @Id
     private Integer statId;
-    
+
     @Column(name = "teamID")
     private Integer teamID;
-    
+
+    @Column(name = "teamName")
+    private String teamName;
     @Column(name = "PGpercent", precision = 4, scale = 1)
     private BigDecimal pgPercent;
-    
+
     @Column(name = "FGpercent", precision = 3, scale = 1)
     private BigDecimal fgPercent;
-    
+
     @Column(name = "Turnovers")
     private Integer turnovers;
-    
+
     @Column(name = "Assists")
     private Integer assists;
-    
+
     @Column(name = "Rebound")
     private Integer rebounds;
-    
+
     @Column(name = "win_percent", precision = 4, scale = 3)
     private BigDecimal winPercent;
-    
-    // Many-to-one relationship with Team - ignore in JSON serialization
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "teamID", insertable = false, updatable = false)
     @JsonIgnore
@@ -45,9 +46,10 @@ public class Stat {
     public Stat() {
     }
 
-    public Stat(Integer teamID, BigDecimal pgPercent, BigDecimal fgPercent, 
-                Integer turnovers, Integer assists, Integer rebounds, BigDecimal winPercent) {
+    public Stat(Integer teamID, String teamName, BigDecimal pgPercent, BigDecimal fgPercent,
+            Integer turnovers, Integer assists, Integer rebounds, BigDecimal winPercent) {
         this.teamID = teamID;
+        this.teamName = teamName;
         this.pgPercent = pgPercent;
         this.fgPercent = fgPercent;
         this.turnovers = turnovers;
@@ -57,9 +59,10 @@ public class Stat {
     }
 
     // Constructor with ID for preloading
-    public Stat(Integer statId, Integer teamID, BigDecimal pgPercent, BigDecimal fgPercent,
-                Integer turnovers, Integer assists, Integer rebounds, BigDecimal winPercent) {
+    public Stat(Integer statId, String teamName, Integer teamID, BigDecimal pgPercent, BigDecimal fgPercent,
+            Integer turnovers, Integer assists, Integer rebounds, BigDecimal winPercent) {
         this.statId = statId;
+        this.teamName = teamName;
         this.teamID = teamID;
         this.pgPercent = pgPercent;
         this.fgPercent = fgPercent;
@@ -84,6 +87,14 @@ public class Stat {
 
     public void setTeamID(Integer teamID) {
         this.teamID = teamID;
+    }
+
+    public String getTeamName() {
+        return teamName;
+    }
+
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
     }
 
     public BigDecimal getPgPercent() {
@@ -144,11 +155,14 @@ public class Stat {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Stat stat = (Stat) o;
         return Objects.equals(statId, stat.statId) &&
                 Objects.equals(teamID, stat.teamID) &&
+                Objects.equals(teamName, stat.teamName) &&
                 Objects.equals(pgPercent, stat.pgPercent) &&
                 Objects.equals(fgPercent, stat.fgPercent) &&
                 Objects.equals(turnovers, stat.turnovers) &&
@@ -159,7 +173,7 @@ public class Stat {
 
     @Override
     public int hashCode() {
-        return Objects.hash(statId, teamID, pgPercent, fgPercent, turnovers, assists, rebounds, winPercent);
+        return Objects.hash(statId, teamName, teamID, pgPercent, fgPercent, turnovers, assists, rebounds, winPercent);
     }
 
     @Override
@@ -167,6 +181,7 @@ public class Stat {
         return "Stat{" +
                 "statId=" + statId +
                 ", teamID=" + teamID +
+                ", teamName='" + teamName + '\'' +
                 ", pgPercent=" + pgPercent +
                 ", fgPercent=" + fgPercent +
                 ", turnovers=" + turnovers +
