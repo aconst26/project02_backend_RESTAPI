@@ -1,9 +1,6 @@
 package com.example.sportsbetting.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.util.Objects;
 
@@ -11,12 +8,12 @@ import java.util.Objects;
  * Entity class representing a User in the database.
  */
 @Entity
+@Table(name = "users")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id; // Unique identifier for the user
+    private Integer userID; // Changed from id to userID and removed auto-generation
     private String userName; // Username of the user
-    private String userPassword; // Password of the user
+    private String UserPassword; // Password of the user (capitalized to match DB)
     private String email; // Email address of the user
 
     // No-argument constructor (required by JPA)
@@ -24,19 +21,36 @@ public class User {
     }
 
     // Constructor with parameters
-    public User(String userName, String userPassword, String email) {
+    public User(String userName, String UserPassword, String email) {
         this.userName = userName;
-        this.userPassword = userPassword;
+        this.UserPassword = UserPassword;
+        this.email = email;
+    }
+
+    // Constructor with ID for preloading
+    public User(Integer userID, String userName, String UserPassword, String email) {
+        this.userID = userID;
+        this.userName = userName;
+        this.UserPassword = UserPassword;
         this.email = email;
     }
 
     // Getters and setters
+    public Integer getUserID() { // Changed from getId to getUserID
+        return userID;
+    }
+
+    public void setUserID(Integer userID) { // Changed from setId to setUserID
+        this.userID = userID;
+    }
+
+    // Keep old methods for backward compatibility
     public Integer getId() {
-        return id;
+        return userID;
     }
 
     public void setId(Integer id) {
-        this.id = id;
+        this.userID = id;
     }
 
     public String getUserName() {
@@ -48,11 +62,11 @@ public class User {
     }
 
     public String getUserPassword() {
-        return userPassword;
+        return UserPassword;
     }
 
     public void setUserPassword(String userPassword) {
-        this.userPassword = userPassword;
+        this.UserPassword = userPassword;
     }
 
     public String getEmail() {
@@ -70,24 +84,24 @@ public class User {
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
         return Objects.equals(userName, user.userName) &&
-                Objects.equals(userPassword, user.userPassword) &&
+                Objects.equals(UserPassword, user.UserPassword) &&
                 Objects.equals(email, user.email);
     }
 
     // Override hashCode() for consistent hashing
     @Override
     public int hashCode() {
-        return Objects.hash(userName, userPassword, email);
+        return Objects.hash(userName, UserPassword, email);
     }
 
     // Override toString() for a readable representation of the user
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", userName='" + userName + '\'' +
-                ", userPassword='" + userPassword + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+            "id=" + userID +
+            ", userName='" + userName + '\'' +
+            ", userPassword='" + UserPassword + '\'' +
+            ", email='" + email + '\'' +
+            '}';
     }
 }

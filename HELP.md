@@ -20,4 +20,17 @@ These additional references should also help you:
 
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
-* git commit --no-gpg-sign -m "Your commit message here"
+
+### add JAVA 17 bash
+* sudo apt update
+* sudo apt install openjdk-17-jdk
+* sudo update-alternatives --config java
+* export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+* export PATH=$JAVA_HOME/bin:$PATH
+* source ~/.bashrc
+* java -version
+
+### add JAVA 17 For APPLE MAC zshell
+* brew install openjdk@17
+* export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
+* export JAVA_HOME=$(/usr/libexec/java_home -v 17)

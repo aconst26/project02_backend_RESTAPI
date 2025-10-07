@@ -34,7 +34,7 @@ public class UserController {
     public CollectionModel<EntityModel<User>> all() {
         List<EntityModel<User>> users = repository.findAll().stream()
                 .map(user -> EntityModel.of(user,
-                        linkTo(methodOn(UserController.class).one(user.getId())).withSelfRel(),
+                        linkTo(methodOn(UserController.class).one(user.getUserID())).withSelfRel(),
                         linkTo(methodOn(UserController.class).all()).withRel("users")))
                 .collect(Collectors.toList());
 
@@ -67,7 +67,10 @@ public class UserController {
             user.setEmail(newUser.getEmail());
             user.setUserPassword(newUser.getUserPassword());
             return repository.save(user);
-        }).orElseGet(() -> repository.save(newUser));
+        }).orElseGet(() -> {
+            newUser.setUserID(id);
+            return repository.save(newUser);
+        });
     }
 
     // Delete a user by ID
