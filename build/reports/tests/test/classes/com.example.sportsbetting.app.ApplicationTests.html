@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.663s</div>
+<div class="counter">0.006s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.663s</td>
+<td class="success">0.006s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,8 +87,8 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>15:19:10.056 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.sportsbetting.app.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-15:19:10.277 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.ApplicationTests
+<pre>2025-10-09T16:24:18.974-07:00  INFO 17196 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-09T16:24:19.010-07:00  INFO 17196 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.ApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -99,57 +99,56 @@
 
  :: Spring Boot ::       (v3.5.7-SNAPSHOT)
 
-2025-10-09T15:19:11.008-07:00  INFO 29900 --- [    Test worker] c.e.sportsbetting.app.ApplicationTests   : Starting ApplicationTests using Java 17.0.16 with PID 29900 (started by garci in C:\Users\garci\OneDrive\Desktop\project02_backend_RESTAPI-main)
-2025-10-09T15:19:11.008-07:00  INFO 29900 --- [    Test worker] c.e.sportsbetting.app.ApplicationTests   : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2025-10-09T15:19:11.985-07:00  INFO 29900 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-09T15:19:12.124-07:00  INFO 29900 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 5 JPA repository interfaces.
-2025-10-09T15:19:13.656-07:00  INFO 29900 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-09T15:19:13.807-07:00  INFO 29900 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-10-09T15:19:13.925-07:00  INFO 29900 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-09T15:19:14.827-07:00  INFO 29900 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-09T15:19:14.948-07:00  INFO 29900 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-10-09T15:19:18.357-07:00  INFO 29900 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b6cad77
-2025-10-09T15:19:18.362-07:00  INFO 29900 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-10-09T15:19:18.504-07:00  WARN 29900 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-09T15:19:18.506-07:00  WARN 29900 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-10-09T15:19:18.545-07:00  INFO 29900 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+2025-10-09T16:24:19.082-07:00  INFO 17196 --- [    Test worker] c.e.sportsbetting.app.ApplicationTests   : Starting ApplicationTests using Java 17.0.16 with PID 17196 (started by garci in C:\Users\garci\OneDrive\Desktop\project02_backend_RESTAPI-main)
+2025-10-09T16:24:19.083-07:00  INFO 17196 --- [    Test worker] c.e.sportsbetting.app.ApplicationTests   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-10-09T16:24:19.450-07:00  INFO 17196 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-09T16:24:19.465-07:00  INFO 17196 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 5 JPA repository interfaces.
+2025-10-09T16:24:19.581-07:00  INFO 17196 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-09T16:24:19.584-07:00  INFO 17196 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-09T16:24:19.600-07:00  INFO 17196 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-09T16:24:19.602-07:00  INFO 17196 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-09T16:24:21.187-07:00  INFO 17196 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7988fd6e
+2025-10-09T16:24:21.188-07:00  INFO 17196 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-09T16:24:21.339-07:00  WARN 17196 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-09T16:24:21.342-07:00  WARN 17196 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-09T16:24:21.350-07:00  INFO 17196 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
 	Database driver: undefined/unknown
 	Database version: 8.0
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-09T15:19:20.025-07:00  INFO 29900 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-09T15:19:21.400-07:00  INFO 29900 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-09T15:19:22.754-07:00  WARN 29900 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-09T15:19:23.702-07:00  WARN 29900 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-10-09T15:19:24.138-07:00  INFO 29900 --- [    Test worker] c.e.sportsbetting.app.ApplicationTests   : Started ApplicationTests in 13.644 seconds (process running for 15.162)
+2025-10-09T16:24:21.608-07:00  INFO 17196 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-09T16:24:23.278-07:00  INFO 17196 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-09T16:24:23.652-07:00  WARN 17196 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-09T16:24:23.776-07:00  WARN 17196 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-10-09T16:24:23.846-07:00  INFO 17196 --- [    Test worker] c.e.sportsbetting.app.ApplicationTests   : Started ApplicationTests in 4.827 seconds (process running for 15.368)
 Hibernate: select count(*) from users u1_0
-2025-10-09T15:19:25.573-07:00  INFO 29900 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Users already exist, skipping preload
+2025-10-09T16:24:24.511-07:00  INFO 17196 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Users already exist, skipping preload
 Hibernate: select count(*) from team t1_0 where t1_0.teamid=?
 Hibernate: select t1_0.teamid,t1_0.division,t1_0.conference,t1_0.name from team t1_0 where t1_0.teamid=?
-2025-10-09T15:19:26.696-07:00  INFO 29900 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : NBA teams already exist, skipping preload
+2025-10-09T16:24:25.703-07:00  INFO 17196 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : NBA teams already exist, skipping preload
 Hibernate: select s1_0.stat_id,s1_0.assists,s1_0.fgpercent,s1_0.pgpercent,s1_0.rebound,s1_0.teamid,s1_0.team_name,s1_0.turnovers,s1_0.win_percent from stat s1_0 where s1_0.stat_id=?
-2025-10-09T15:19:26.885-07:00  WARN 29900 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Stat] entity was modified, but it won't be updated because the property is immutable.
+2025-10-09T16:24:25.910-07:00  WARN 17196 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Stat] entity was modified, but it won't be updated because the property is immutable.
 Hibernate: select s1_0.stat_id,s1_0.assists,s1_0.fgpercent,s1_0.pgpercent,s1_0.rebound,s1_0.teamid,s1_0.team_name,s1_0.turnovers,s1_0.win_percent from stat s1_0 where s1_0.stat_id=?
-2025-10-09T15:19:27.185-07:00  WARN 29900 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Stat] entity was modified, but it won't be updated because the property is immutable.
+2025-10-09T16:24:26.269-07:00  WARN 17196 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Stat] entity was modified, but it won't be updated because the property is immutable.
 Hibernate: select s1_0.stat_id,s1_0.assists,s1_0.fgpercent,s1_0.pgpercent,s1_0.rebound,s1_0.teamid,s1_0.team_name,s1_0.turnovers,s1_0.win_percent from stat s1_0 where s1_0.stat_id=?
-2025-10-09T15:19:27.475-07:00  WARN 29900 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Stat] entity was modified, but it won't be updated because the property is immutable.
+2025-10-09T16:24:26.638-07:00  WARN 17196 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Stat] entity was modified, but it won't be updated because the property is immutable.
 Hibernate: select s1_0.stat_id,s1_0.assists,s1_0.fgpercent,s1_0.pgpercent,s1_0.rebound,s1_0.teamid,s1_0.team_name,s1_0.turnovers,s1_0.win_percent from stat s1_0 where s1_0.stat_id=?
-2025-10-09T15:19:27.768-07:00  WARN 29900 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Stat] entity was modified, but it won't be updated because the property is immutable.
+2025-10-09T16:24:27.040-07:00  WARN 17196 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Stat] entity was modified, but it won't be updated because the property is immutable.
 Hibernate: select s1_0.stat_id,s1_0.assists,s1_0.fgpercent,s1_0.pgpercent,s1_0.rebound,s1_0.teamid,s1_0.team_name,s1_0.turnovers,s1_0.win_percent from stat s1_0 where s1_0.stat_id=?
-2025-10-09T15:19:28.061-07:00  WARN 29900 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Stat] entity was modified, but it won't be updated because the property is immutable.
+2025-10-09T16:24:27.502-07:00  WARN 17196 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Stat] entity was modified, but it won't be updated because the property is immutable.
 Hibernate: select s1_0.stat_id,s1_0.assists,s1_0.fgpercent,s1_0.pgpercent,s1_0.rebound,s1_0.teamid,s1_0.team_name,s1_0.turnovers,s1_0.win_percent from stat s1_0 where s1_0.stat_id=?
-2025-10-09T15:19:28.353-07:00  WARN 29900 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Stat] entity was modified, but it won't be updated because the property is immutable.
+2025-10-09T16:24:27.886-07:00  WARN 17196 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Stat] entity was modified, but it won't be updated because the property is immutable.
 Hibernate: insert into game (awayteamid,awayteam_name,date,hometeamid,hometeam_name) values (?,?,?,?,?)
 Hibernate: insert into game (awayteamid,awayteam_name,date,hometeamid,hometeam_name) values (?,?,?,?,?)
 Hibernate: insert into game (awayteamid,awayteam_name,date,hometeamid,hometeam_name) values (?,?,?,?,?)
 Hibernate: insert into game (awayteamid,awayteam_name,date,hometeamid,hometeam_name) values (?,?,?,?,?)
 Hibernate: insert into game (awayteamid,awayteam_name,date,hometeamid,hometeam_name) values (?,?,?,?,?)
 Hibernate: select f1_0.fav,f1_0.teamid,f1_0.team_name,f1_0.userid from fav f1_0 where f1_0.fav=?
-2025-10-09T15:19:30.148-07:00  WARN 29900 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Fav] entity was modified, but it won't be updated because the property is immutable.
-2025-10-09T15:19:30.149-07:00  WARN 29900 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [user] property of the [com.example.sportsbetting.entities.Fav] entity was modified, but it won't be updated because the property is immutable.
+2025-10-09T16:24:30.430-07:00  WARN 17196 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [team] property of the [com.example.sportsbetting.entities.Fav] entity was modified, but it won't be updated because the property is immutable.
+2025-10-09T16:24:30.430-07:00  WARN 17196 --- [    Test worker] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [user] property of the [com.example.sportsbetting.entities.Fav] entity was modified, but it won't be updated because the property is immutable.
 </pre>
 </span>
 </div>
@@ -161,7 +160,7 @@ Hibernate: select f1_0.fav,f1_0.teamid,f1_0.team_name,f1_0.userid from fav f1_0 
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14.3</a> at Oct 9, 2025, 3:19:35 PM</p>
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at Oct 9, 2025, 4:24:31 PM</p>
 </div>
 </div>
 </body>
