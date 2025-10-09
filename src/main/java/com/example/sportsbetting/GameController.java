@@ -17,7 +17,6 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
  */
 @RestController
 @RequestMapping("/games")
-@CrossOrigin(origins = { "exp://192.168.0.31:8081" }) // Adjust for your frontend
 public class GameController {
 
     private final GameRepository gameRepository;
