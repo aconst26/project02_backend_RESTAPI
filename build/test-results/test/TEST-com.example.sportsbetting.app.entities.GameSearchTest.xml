@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Game Search Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-09T23:24:30.653Z" hostname="JESUS2025" time="0.004">
+<testsuite name="Game Search Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-09T23:26:34.620Z" hostname="JESUS2025" time="0.069">
   <properties/>
-  <testcase name="Search Game by Date" classname="com.example.sportsbetting.app.entities.GameSearchTest" time="0.004"/>
+  <testcase name="Search Game by Date" classname="com.example.sportsbetting.app.entities.GameSearchTest" time="0.069"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

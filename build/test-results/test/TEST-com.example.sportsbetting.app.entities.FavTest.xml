@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Fav Entity Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-09T23:24:18.136Z" hostname="JESUS2025" time="0.155">
+<testsuite name="Fav Entity Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-09T23:26:34.610Z" hostname="JESUS2025" time="0.009">
   <properties/>
-  <testcase name="Parameterized constructor should set userID, teamID, and teamName" classname="com.example.sportsbetting.app.entities.FavTest" time="0.155"/>
-  <system-out><![CDATA[16:24:09.915 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.FavTest]: FavTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:24:10.112 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.FavTest
+  <testcase name="Parameterized constructor should set userID, teamID, and teamName" classname="com.example.sportsbetting.app.entities.FavTest" time="0.009"/>
+  <system-out><![CDATA[2025-10-09T16:26:32.559-07:00  INFO 31848 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.FavTest]: FavTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-09T16:26:32.630-07:00  INFO 31848 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.FavTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,27 +14,26 @@
 
  :: Spring Boot ::       (v3.5.7-SNAPSHOT)
 
-2025-10-09T16:24:10.865-07:00  INFO 17196 --- [    Test worker] c.e.sportsbetting.app.entities.FavTest   : Starting FavTest using Java 17.0.16 with PID 17196 (started by garci in C:\Users\garci\OneDrive\Desktop\project02_backend_RESTAPI-main)
-2025-10-09T16:24:10.867-07:00  INFO 17196 --- [    Test worker] c.e.sportsbetting.app.entities.FavTest   : The following 1 profile is active: "test"
-2025-10-09T16:24:11.775-07:00  INFO 17196 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-09T16:24:11.897-07:00  INFO 17196 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 5 JPA repository interfaces.
-2025-10-09T16:24:12.593-07:00  INFO 17196 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-09T16:24:12.741-07:00  INFO 17196 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-10-09T16:24:12.798-07:00  INFO 17196 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-09T16:24:13.290-07:00  INFO 17196 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-09T16:24:13.334-07:00  INFO 17196 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-10-09T16:24:13.501-07:00  INFO 17196 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2025-10-09T16:24:13.504-07:00  INFO 17196 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-10-09T16:24:13.527-07:00  WARN 17196 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-09T16:24:13.557-07:00  INFO 17196 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+2025-10-09T16:26:32.696-07:00  INFO 31848 --- [    Test worker] c.e.sportsbetting.app.entities.FavTest   : Starting FavTest using Java 17.0.16 with PID 31848 (started by garci in C:\Users\garci\OneDrive\Desktop\project02_backend_RESTAPI-main)
+2025-10-09T16:26:32.697-07:00  INFO 31848 --- [    Test worker] c.e.sportsbetting.app.entities.FavTest   : The following 1 profile is active: "test"
+2025-10-09T16:26:33.079-07:00  INFO 31848 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-09T16:26:33.112-07:00  INFO 31848 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 5 JPA repository interfaces.
+2025-10-09T16:26:33.513-07:00  INFO 31848 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-09T16:26:33.521-07:00  INFO 31848 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-09T16:26:33.579-07:00  INFO 31848 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-09T16:26:33.581-07:00  INFO 31848 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-09T16:26:33.875-07:00  INFO 31848 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-10-09T16:26:33.877-07:00  INFO 31848 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-09T16:26:33.886-07:00  WARN 31848 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-09T16:26:33.900-07:00  INFO 31848 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-09T16:24:14.586-07:00  INFO 17196 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-09T16:26:34.093-07:00  INFO 31848 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists fav cascade 
 Hibernate: drop table if exists game cascade 
 Hibernate: drop table if exists stat cascade 
@@ -50,16 +49,16 @@ Hibernate: alter table if exists fav add constraint FKhuu08dn9uqxul8gcg2fhah0bf 
 Hibernate: alter table if exists game add constraint FKb5d8l2rcb9gcxwn3kmotcv9gw foreign key (awayteamid) references team
 Hibernate: alter table if exists game add constraint FKbqwbmu1px7n87x4fsj3u00s6j foreign key (hometeamid) references team
 Hibernate: alter table if exists stat add constraint FKpcq4p90ey6sn80rsm1iaxvfxa foreign key (teamid) references team
-2025-10-09T16:24:14.650-07:00  INFO 17196 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-09T16:24:15.491-07:00  WARN 17196 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-09T16:24:15.982-07:00  WARN 17196 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-10-09T16:24:16.263-07:00  INFO 17196 --- [    Test worker] c.e.sportsbetting.app.entities.FavTest   : Started FavTest in 5.977 seconds (process running for 7.784)
+2025-10-09T16:26:34.163-07:00  INFO 31848 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-09T16:26:34.263-07:00  WARN 31848 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-09T16:26:34.367-07:00  WARN 31848 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-10-09T16:26:34.460-07:00  INFO 31848 --- [    Test worker] c.e.sportsbetting.app.entities.FavTest   : Started FavTest in 1.819 seconds (process running for 22.511)
 Hibernate: select count(*) from users u1_0
 Hibernate: select u1_0.userid,u1_0.user_password,u1_0.email,u1_0.user_name from users u1_0 where u1_0.userid=?
 Hibernate: insert into users (user_password,email,user_name,userid) values (?,?,?,?)
 Hibernate: select u1_0.userid,u1_0.user_password,u1_0.email,u1_0.user_name from users u1_0 where u1_0.userid=?
 Hibernate: insert into users (user_password,email,user_name,userid) values (?,?,?,?)
-2025-10-09T16:24:16.804-07:00  INFO 17196 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 2 users from database script
+2025-10-09T16:26:34.513-07:00  INFO 31848 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Preloaded 2 users from database script
 Hibernate: select count(*) from team t1_0 where t1_0.teamid=?
 Hibernate: select t1_0.teamid,t1_0.division,t1_0.conference,t1_0.name from team t1_0
 Hibernate: select t1_0.teamid,t1_0.division,t1_0.conference,t1_0.name from team t1_0 where t1_0.teamid=?
@@ -74,7 +73,7 @@ Hibernate: select t1_0.teamid,t1_0.division,t1_0.conference,t1_0.name from team 
 Hibernate: insert into team (division,conference,name,teamid) values (?,?,?,?)
 Hibernate: select t1_0.teamid,t1_0.division,t1_0.conference,t1_0.name from team t1_0 where t1_0.teamid=?
 Hibernate: insert into team (division,conference,name,teamid) values (?,?,?,?)
-2025-10-09T16:24:16.932-07:00  INFO 17196 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Loaded NBA teams, replacing any existing teams
+2025-10-09T16:26:34.580-07:00  INFO 31848 --- [    Test worker] com.example.sportsbetting.LoadDatabase   : Loaded NBA teams, replacing any existing teams
 Hibernate: select s1_0.stat_id,s1_0.assists,s1_0.fgpercent,s1_0.pgpercent,s1_0.rebound,s1_0.teamid,s1_0.team_name,s1_0.turnovers,s1_0.win_percent from stat s1_0 where s1_0.stat_id=?
 Hibernate: insert into stat (assists,fgpercent,pgpercent,rebound,teamid,team_name,turnovers,win_percent,stat_id) values (?,?,?,?,?,?,?,?,?)
 Hibernate: select s1_0.stat_id,s1_0.assists,s1_0.fgpercent,s1_0.pgpercent,s1_0.rebound,s1_0.teamid,s1_0.team_name,s1_0.turnovers,s1_0.win_percent from stat s1_0 where s1_0.stat_id=?
