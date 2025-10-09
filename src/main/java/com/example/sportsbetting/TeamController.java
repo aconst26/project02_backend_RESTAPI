@@ -13,7 +13,6 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 @RestController
 @RequestMapping("/teams")
-@CrossOrigin(origins = { "exp://192.168.0.31:8081" }) // Adjust for your frontend
 public class TeamController {
 
     private final TeamRepository teamRepository;
