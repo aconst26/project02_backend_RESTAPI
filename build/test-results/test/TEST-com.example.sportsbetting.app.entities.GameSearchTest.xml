@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Game Search Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-09T21:38:28.312Z" hostname="JESUS2025" time="0.091">
+  <properties/>
+  <testcase name="Search Game by Date" classname="com.example.sportsbetting.app.entities.GameSearchTest" time="0.091"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

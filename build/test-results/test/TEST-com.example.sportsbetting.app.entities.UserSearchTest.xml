@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="User Search Tests" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-10-09T21:38:28.792Z" hostname="JESUS2025" time="0.054">
+  <properties/>
+  <testcase name="Search User by ID" classname="com.example.sportsbetting.app.entities.UserSearchTest" time="0.052"/>
+  <testcase name="Search User by Username" classname="com.example.sportsbetting.app.entities.UserSearchTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
