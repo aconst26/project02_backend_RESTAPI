@@ -1,4 +1,4 @@
-package com.example.sportsbetting.app.repositories;
+package com.example.sportsbetting.app.entities;
 
 import com.example.sportsbetting.entities.User;
 import com.example.sportsbetting.UserRepository;

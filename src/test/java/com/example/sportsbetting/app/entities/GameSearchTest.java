@@ -1,10 +1,10 @@
-package com.example.sportsbetting.app.repositories;
+package com.example.sportsbetting.app.entities;
 
 import com.example.sportsbetting.entities.Game;
 import com.example.sportsbetting.GameRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
-import org.mockito.Mock;
+        import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.junit.jupiter.api.extension.ExtendWith;
 
