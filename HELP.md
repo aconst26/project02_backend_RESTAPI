@@ -28,7 +28,7 @@ These additional references should also help you:
 * export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 * export PATH=$JAVA_HOME/bin:$PATH
 * source ~/.bashrc
-* java -version
+* java --version
 
 ### add JAVA 17 For APPLE MAC zshell
 * brew install openjdk@17
