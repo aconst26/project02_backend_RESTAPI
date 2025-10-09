@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Stat Entity Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-09T21:38:28.520Z" hostname="JESUS2025" time="0.009">
-  <properties/>
-  <testcase name="Parameterized constructor should set all fields" classname="com.example.sportsbetting.app.entities.StatTest" time="0.009"/>
-  <system-out><![CDATA[2025-10-09T14:38:28.512-07:00  INFO 9628 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.sportsbetting.app.entities.StatTest]: StatTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-10-09T14:38:28.515-07:00  INFO 9628 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.sportsbetting.Application for test class com.example.sportsbetting.app.entities.StatTest
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
