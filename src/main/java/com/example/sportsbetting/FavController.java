@@ -16,7 +16,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
  */
 @RestController
 @RequestMapping("/favs")
-@CrossOrigin(origins = { "exp://192.168.0.31:8081" }) // Adjust for your frontend
+@CrossOrigin(origins = { "*" }) // Adjust for your frontend
 public class FavController {
 
     private final FavRepository favRepository;
