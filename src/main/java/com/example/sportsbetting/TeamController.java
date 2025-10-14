@@ -13,6 +13,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 @RestController
 @RequestMapping("/teams")
+
 public class TeamController {
 
     private final TeamRepository teamRepository;
