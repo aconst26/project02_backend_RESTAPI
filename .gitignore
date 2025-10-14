@@ -1,0 +1,56 @@
+(# Gradle specific
+.gradle/
+build/
+out/
+
+# Keep the Gradle wrapper jar in source control but ignore wrapper caches
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDEA, Eclipse, VS Code
+*.iml
+*.ipr
+*.iws
+.idea/
+.classpath
+.project
+.settings/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+tmp/
+*.tmp
+hs_err_pid*
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Environment and local config
+.env
+local.properties
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Test output
+/test-results/
+
+# Node (if front-end lives in the repo)
+node_modules/
+dist/
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+

@@ -20,7 +20,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
  */
 @RestController
 @RequestMapping("/users")
-@CrossOrigin(origins = { "*" }) // Adjust for your frontend
+
 public class UserController {
     private final UserRepository repository;
 
