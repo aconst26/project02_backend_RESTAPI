@@ -3,8 +3,8 @@ to check if you run the data base here what to do:
 - mysql -h sulnwdk5uwjw1r2k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com -u t9c12j62077nwvgi -p
     - password in properties
 - mysql> SHOW DATABASES (to see what databases)
-- USE gsa87t3oul4l1w46 (we in that db)
-- SHOW TABLES
+- USE gsa87t3oul4l1w46; (we in that db)
+- SHOW TABLES;
 
 # MySQL configuration for main application
 spring.datasource.url=jdbc:mysql://sulnwdk5uwjw1r2k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mlu4yl93793v3hqy

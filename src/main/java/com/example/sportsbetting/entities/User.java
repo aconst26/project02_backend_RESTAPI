@@ -11,9 +11,16 @@ import java.util.Objects;
 @Table(name = "users")
 public class User {
     @Id
+    @Column(name = "userID")
     private Integer userID; // Changed from id to userID and removed auto-generation
+
+    @Column(name = "userName", nullable = false)
     private String userName; // Username of the user
+
+    @Column(name = "UserPassword", nullable = false)
     private String UserPassword; // Password of the user (capitalized to match DB)
+
+    @Column(name = "email")
     private String email; // Email address of the user
 
     // No-argument constructor (required by JPA)
@@ -80,8 +87,10 @@ public class User {
     // Override equals() to compare users based on their fields
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         User user = (User) o;
         return Objects.equals(userName, user.userName) &&
                 Objects.equals(UserPassword, user.UserPassword) &&
@@ -98,10 +107,10 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-            "id=" + userID +
-            ", userName='" + userName + '\'' +
-            ", userPassword='" + UserPassword + '\'' +
-            ", email='" + email + '\'' +
-            '}';
+                "id=" + userID +
+                ", userName='" + userName + '\'' +
+                ", userPassword='" + UserPassword + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
