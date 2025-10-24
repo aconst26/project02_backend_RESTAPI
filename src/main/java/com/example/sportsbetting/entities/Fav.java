@@ -11,6 +11,7 @@ import java.util.Objects;
 @Table(name = "FAV")
 public class Fav {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
     private Integer fav;
 
     @Column(name = "userID")
