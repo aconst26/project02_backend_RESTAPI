@@ -14,24 +14,25 @@ public class Fav {
     @GeneratedValue(strategy = GenerationType.IDENTITY) 
     private Integer fav;
 
-    @Column(name = "userID")
+    @Column(name = "userid")
     private Integer userID;
 
-    @Column(name = "teamID")
+    @Column(name = "teamid")
     private Integer teamID;
 
-    @Column(name = "teamName")
+    @Column(name = "team_name")
     private String teamName;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "userID", insertable = false, updatable = false)
+    @JoinColumn(name = "userid", insertable = false, updatable = false)
     @JsonIgnore
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "teamID", insertable = false, updatable = false)
+    @JoinColumn(name = "teamid", insertable = false, updatable = false)
     @JsonIgnore
     private Team team;
+
 
     // Constructors, getters, setters, equals, hashCode, and toString methods
 
